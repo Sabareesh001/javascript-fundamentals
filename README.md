@@ -1,0 +1,1 @@
+This is to track my progress in Javascript fundamentals
