@@ -1,0 +1,118 @@
+/* reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* center content on page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #00053a;
+    color: white;
+}
+
+/* calculator container */
+.calculator-box {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+/* title styling */
+.calculator-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00d4ff;
+}
+
+/* display styling */
+.display {
+    margin-bottom: 20px;
+}
+
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    border: 2px solid #00d4ff;
+    border-radius: 5px;
+    background-color: #0f3460;
+    color: #00d4ff;
+    text-align: right;
+}
+
+/* buttons grid layout */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* button styling */
+.btn {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #16213e;
+    color: white;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #0f3460;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* operator button styling */
+.btn-operator {
+    background-color: #e94560;
+    color: white;
+}
+
+.btn-operator:hover {
+    background-color: #c73a4d;
+}
+
+/* clear button styling */
+.btn-clear {
+    background-color: #f39c12;
+    color: white;
+    grid-column: span 2;
+}
+
+.btn-clear:hover {
+    background-color: #d68910;
+}
+
+/* equals button styling */
+.btn-equals {
+    background-color: #27ae60;
+    color: white;
+    grid-row: span 2;
+    grid-column: 4;
+}
+
+.btn-equals:hover {
+    background-color: #229954;
+}
+
+/* zero button styling */
+.btn-zero {
+    grid-column: span 2;
+}
