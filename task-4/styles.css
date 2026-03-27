@@ -1,0 +1,227 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Set up main page layout and background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+/* Main container for the weather app */
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Header styling */
+.container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Search section layout */
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+/* City input field styling */
+.city-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.city-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Fetch weather button styling */
+.fetch-btn {
+    padding: 12px 24px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fetch-btn:hover {
+    background-color: #5568d3;
+    transform: translateY(-2px);
+}
+
+.fetch-btn:active {
+    transform: translateY(0);
+}
+
+/* Weather display card styling */
+.weather-display {
+    min-height: 150px;
+}
+
+.weather-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    animation: slideIn 0.3s ease;
+}
+
+/* Animation for weather card appearance */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Location header styling */
+.location h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Main weather info section */
+.weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Weather icon styling */
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Temperature display styling */
+.temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp-value {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+/* Weather details grid */
+.weather-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Individual detail item styling */
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.detail-label {
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.detail-value {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Error message styling */
+.error-message {
+    color: #d32f2f;
+    background-color: #ffebee;
+    border-left: 4px solid #d32f2f;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    display: none;
+    animation: slideIn 0.3s ease;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .fetch-btn {
+        width: 100%;
+    }
+
+    .weather-details {
+        grid-template-columns: 1fr;
+    }
+
+    .weather-main {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .weather-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .temp-value {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,36 @@
+<!-- Weather App -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - Weather App</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Weather app container -->
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <!-- Input section for city search -->
+        <div class="search-section">
+            <input type="text" id="cityInput" class="city-input" placeholder="Enter city name...">
+            <button id="fetchBtn" class="fetch-btn">Fetch Weather</button>
+        </div>
+
+        <!-- Weather information display area -->
+        <div id="weatherDisplay" class="weather-display">
+            <!-- Weather content will be inserted here by JavaScript -->
+        </div>
+
+        <!-- Error message display -->
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
