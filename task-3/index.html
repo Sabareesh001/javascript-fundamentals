@@ -1,0 +1,30 @@
+<!-- Image Gallery with Modal Popup -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Image Gallery</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Grid container for displaying images in a responsive layout -->
+    <div class="grid">
+        <!-- Image gallery items - clicking triggers modal display -->
+        <img onclick="displayImage()" src="assets/img-1.jpeg" alt="Loading...">
+        <img onclick="displayImage()" src="assets/img-2.jpeg" alt="Loading...">
+        <img onclick="displayImage()" src="assets/img-3.jpeg" alt="Loading...">
+        <img onclick="displayImage()" src="assets/img-4.jpeg" alt="Loading...">
+        <img onclick="displayImage()" src="assets/img-5.jpeg" alt="Loading...">
+        <!-- Modal overlay for enlarged image display -->
+        <div class="modal">
+            <img class="modal-content" id="img01">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

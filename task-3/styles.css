@@ -1,0 +1,76 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Center all content on the page and set up the main layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 67, 251, 0.326);
+    color: #333;
+}
+
+/* Grid container for image layout with flexbox */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style individual grid images with hover effects */
+.grid img {
+    width: 250px;
+    object-fit: cover;
+    height: auto;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add scale animation and pointer cursor on hover */
+.grid img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Modal overlay - hidden by default, shown when image is clicked */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Enlarged image displayed in the modal */
+.modal-content {
+    z-index: 1;
+    width: 80% !important;
+    height: 80% !important;
+    border-radius: 10px !important;
+    object-fit: contain !important;
+    box-shadow: none !important;
+    background-color: white;
+}
+
+/* Prevent scale effect on modal image hover */
+.modal-content:hover {
+    transform: none !important;
+    transition: 0.3s ease;
+}
