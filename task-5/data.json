@@ -1,0 +1,45 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "options": ["Berlin", "Madrid", "Paris", "Rome"],
+      "answerIndex": 2
+    },
+    {
+      "id": 2,
+      "question": "Which language is used for web development?",
+      "options": ["Python", "HTML", "C++", "Java"],
+      "answerIndex": 1
+    },
+    {
+      "id": 3,
+      "question": "What does CPU stand for?",
+      "options": [
+        "Central Processing Unit",
+        "Computer Personal Unit",
+        "Central Program Utility",
+        "Control Processing Unit"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 4,
+      "question": "Which data structure uses FIFO?",
+      "options": ["Stack", "Queue", "Tree", "Graph"],
+      "answerIndex": 1
+    },
+    {
+      "id": 5,
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Jupiter", "Venus"],
+      "answerIndex": 1
+    },
+    {
+      "id": 6,
+      "question": "Which protocol is used for secure web browsing?",
+      "options": ["HTTP", "FTP", "HTTPS", "SMTP"],
+      "answerIndex": 2
+    }
+  ]
+}

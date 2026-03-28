@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 - Quiz App</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main quiz container -->
+    <div class="quiz-box">
+        <!-- Header with title and score -->
+        <div class="quiz-header">
+            <h1>Quiz App</h1>
+            <div class="score-display">
+                <span>Score: <strong id="score">0</strong> / <strong id="total">0</strong></span>
+            </div>
+        </div>
+
+        <!-- Question counter -->
+        <div class="question-counter">
+            Question <span id="current-question">1</span> of <span id="total-questions">0</span>
+        </div>
+
+        <!-- Quiz content container -->
+        <div class="quiz-content">
+            <!-- Question display -->
+            <div class="question-box">
+                <h2 id="question-text"></h2>
+            </div>
+
+            <!-- Options container -->
+            <div class="options-container" id="options-container">
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="button-container">
+            <button onclick="previousQuestion()" id="prev-btn" class="nav-btn">Previous</button>
+            <button onclick="nextQuestion()" id="next-btn" class="nav-btn">Next</button>
+        </div>
+
+        <!-- Submit button (hidden until last question) -->
+        <div class="submit-container" id="submit-container">
+            <button onclick="submitQuiz()" id="submit-btn" class="submit-btn">Submit Quiz</button>
+        </div>
+
+        <!-- Results display (hidden initially) -->
+        <div class="results" id="results" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <div class="final-score">
+                <p>Your Final Score: <strong><span id="final-score">0</span> / <span id="final-total">0</span></strong>
+                </p>
+                <p class="percentage" id="percentage"></p>
+            </div>
+            <button onclick="restartQuiz()" class="submit-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <!-- Link to javascript -->
+    <script src="index.js"></script>
+</body>
+
+</html>

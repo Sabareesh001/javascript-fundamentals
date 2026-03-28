@@ -1,0 +1,235 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #00053a;
+    padding: 20px;
+}
+
+/* Main quiz container */
+.quiz-box {
+    background-color: #001a4d;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    color: white;
+}
+
+/* Quiz header styling */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid lightblue;
+    padding-bottom: 15px;
+}
+
+.quiz-header h1 {
+    font-size: 32px;
+    color: lightblue;
+}
+
+.score-display {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.score-display strong {
+    color: lightblue;
+}
+
+/* Question counter */
+.question-counter {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Quiz content */
+.quiz-content {
+    margin-bottom: 30px;
+}
+
+/* Question box styling */
+.question-box {
+    background-color: #002d7a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border-left: 4px solid lightblue;
+}
+
+.question-box h2 {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Options container */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Option button styling */
+.option-btn {
+    padding: 15px;
+    background-color: #003d99;
+    border: 2px solid transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.option-btn:hover {
+    background-color: #005bb3;
+    border-color: lightblue;
+}
+
+.option-btn.selected {
+    background-color: lightblue;
+    color: #00053a;
+    font-weight: bold;
+    border-color: lightblue;
+}
+
+/* Button container for navigation */
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation buttons */
+.nav-btn {
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    color: #00053a;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    max-width: 150px;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background-color: #87ceeb;
+}
+
+.nav-btn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+    color: #999;
+}
+
+/* Submit container */
+.submit-container {
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Submit button */
+.submit-btn {
+    padding: 12px 40px;
+    background-color: lightblue;
+    border: none;
+    color: #00053a;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #87ceeb;
+}
+
+/* Results display */
+.results {
+    text-align: center;
+    padding: 30px;
+    background-color: #002d7a;
+    border-radius: 8px;
+    border: 2px solid lightblue;
+}
+
+.results h2 {
+    font-size: 28px;
+    color: lightblue;
+    margin-bottom: 30px;
+}
+
+.final-score {
+    margin-bottom: 30px;
+}
+
+.final-score p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.final-score strong {
+    color: lightblue;
+    font-size: 24px;
+}
+
+.percentage {
+    font-size: 20px;
+    color: lightblue;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .quiz-box {
+        padding: 20px;
+    }
+
+    .quiz-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .quiz-header h1 {
+        font-size: 24px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        max-width: 100%;
+    }
+
+    .question-box h2 {
+        font-size: 18px;
+    }
+}
