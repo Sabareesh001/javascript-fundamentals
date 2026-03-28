@@ -1,0 +1,96 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Body styling - full height */
+body {
+    height: 100vh;
+    background-color: #00053a;
+}
+
+/* Container with flexbox - perfectly centered */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+/* Block styling */
+.block {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00053a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.block.drag-over {
+    background-color: #000000 !important;
+    color: #000000 !important;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #1e90ff;
+    border-radius: 8px;
+    border-style: dashed;
+}
+
+/* Hover effect */
+.block:hover {
+    transform: scale(1.1);
+    background-color: #87ceeb;
+}
+
+#block1 {
+    background-color: #ff6347;
+    /* Tomato */
+}
+
+#block2 {
+    background-color: #3cb371;
+    /* Medium Sea Green */
+}
+
+#block3 {
+    background-color: #1e90ff;
+    /* Dodger Blue */
+}
+
+#block4 {
+    background-color: #ffa500;
+    /* Orange */
+}
+
+#block5 {
+    background-color: #9370db;
+    /* Medium Purple */
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        gap: 15px;
+    }
+
+    .block {
+        width: 150px;
+        height: 80px;
+        font-size: 16px;
+    }
+}
