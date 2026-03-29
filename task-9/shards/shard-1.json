@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "First Block",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "category": "General",
+      "tags": ["important", "featured"]
+    },
+    {
+      "id": 2,
+      "title": "Second Block",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "category": "News",
+      "tags": ["update", "news"]
+    },
+    {
+      "id": 3,
+      "title": "Third Block",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "category": "Tutorial",
+      "tags": ["guide", "learning"]
+    }
+  ]
+}
