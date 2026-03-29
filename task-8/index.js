@@ -4,8 +4,12 @@ const allContentDivs = document.querySelectorAll(".page");
 // Navigation handler function
 const route = function () {
   const hash = window.location.hash;
+  if (hash === "") {
+    document.getElementById("home").style.display = "block";
+    return;
+  }
+
   const contentDiv = document.getElementById(hash.slice(1));
-  console.log(contentDiv);
 
   // Hide all pages
   allContentDivs.forEach((div) => {
