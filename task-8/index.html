@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">MyApp</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Sections (controlled by routing) -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page">
+            <h2>Welcome to Home</h2>
+            <p>This is the home page content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Get Started</button>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <h2>About Us</h2>
+            <p>Learn more about our company. We are dedicated to providing the best services.</p>
+            <p>Founded in 2020, we've been helping thousands of customers achieve their goals.</p>
+        </section>
+
+        <!-- Services Page -->
+        <section id="services" class="page">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>UI/UX Design</li>
+                <li>Consulting</li>
+            </ul>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section id="404" class="page">
+            <h2>Page Not Found</h2>
+            <p>Sorry, the page you are looking for does not exist.</p>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
