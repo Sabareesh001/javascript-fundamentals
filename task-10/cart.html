@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Shop</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Products</a></li>
+                <li>
+                    <a href="cart.html" class="active cart-link">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="cart-section">
+            <h1>Shopping Cart</h1>
+
+            <div id="cartContent">
+                <!-- Cart items will be inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

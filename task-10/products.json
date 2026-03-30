@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 129.99,
+    "discount": 15,
+    "category": "Electronics",
+    "image": "🎧"
+  },
+  {
+    "id": 2,
+    "name": "USB-C Cable",
+    "price": 19.99,
+    "discount": 10,
+    "category": "Electronics",
+    "image": "🔌"
+  },
+  {
+    "id": 3,
+    "name": "Running Shoes",
+    "price": 89.99,
+    "discount": 20,
+    "category": "Clothing",
+    "image": "👟"
+  },
+  {
+    "id": 4,
+    "name": "Winter Jacket",
+    "price": 159.99,
+    "discount": 12,
+    "category": "Clothing",
+    "image": "🧥"
+  },
+  {
+    "id": 5,
+    "name": "Coffee Maker",
+    "price": 49.99,
+    "discount": 8,
+    "category": "Home",
+    "image": "☕"
+  },
+  {
+    "id": 6,
+    "name": "Desk Lamp",
+    "price": 34.99,
+    "discount": 5,
+    "category": "Home",
+    "image": "💡"
+  },
+  {
+    "id": 7,
+    "name": "Water Bottle",
+    "price": 24.99,
+    "discount": 10,
+    "category": "Other",
+    "image": "🍶"
+  },
+  {
+    "id": 8,
+    "name": "Notebook Set",
+    "price": 14.99,
+    "discount": 0,
+    "category": "Other",
+    "image": "📓"
+  }
+]

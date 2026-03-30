@@ -29,7 +29,7 @@ function sendMessage() {
   // Simulate bot response
   setTimeout(() => {
     addMessage("This is a bot response!", "bot");
-  }, 500);
+  }, 1000);
 }
 
 // Function to add message to chat
